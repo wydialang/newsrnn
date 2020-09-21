@@ -6,7 +6,7 @@
 project exploring how neural networks can be used to create a language model that can generate text and learn the rules of grammar and English :) well, by applying the knowledge for evil and learn how to generate fake news.
 """
 
-#@title Run this cell to import libraries and download the data! If there is a prompt, just enter "A"
+#@title import libraries and download the data. If there is a prompt, just enter "A"
 import os
 import random
 import string
@@ -26,7 +26,7 @@ gdown.download("https://drive.google.com/uc?id=1UuANHblVzkclCC2v9J0V7uxX0Y0Fjfkx
 
 ! unzip -oq pre_train.zip
 
-#@title Run this cell to load some helper functions
+#@title load helper functions
 def load_data():
     with open("fake.txt", "r") as f:
         return f.read()
